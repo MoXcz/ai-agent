@@ -7,8 +7,11 @@
 - Python >= 3.13
 - `google-genai`
 - `python-dotenv`
+- `GEMINI_API_KEY` (see [here](https://ai.google.dev/gemini-api/docs/api-key)
 
 ## Quick Start
+
+> Inside a `.env` file (or whatever tools you use to manage env vars) define `GEMINI_API_KEY`
 
 ```sh
 git clone https://github.com/moxcz/ai-agent
@@ -16,6 +19,7 @@ cd ai-agent
 python3 -m venv .venv
 . ./.venv/bin/activate
 pip install -r requirements.txt
+export GEMINI_API_KEY=<your-key-goes-here>
 python3 main.py
 ```
 
